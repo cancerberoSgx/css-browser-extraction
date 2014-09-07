@@ -1,0 +1,14 @@
+{
+	"name": "todo"
+,	"version": "0.1.0"
+,	"description": "todo"
+,	"author": "Sebastián Gurin"
+
+,	"devDependencies": {
+		"grunt": "*",
+		"grunt-contrib-connect":"*",
+		"grunt-contrib-watch":"*",
+		"grunt-contrib-uglify":"*",
+  		"matchdep": "*"
+	}
+}

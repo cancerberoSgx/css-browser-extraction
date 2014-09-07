@@ -1,0 +1,38 @@
+<html>
+<head>
+  <script src="../../lib/jquery.js"></script>
+<script src="../../src/css-extractor.js"></script>
+<!-- <script src="../../src/all.min.js"></script> -->
+</head>
+<body>
+
+<div id="main">
+	<p class="test1">asd</p>
+	<ul>
+		<li id="myli test1" class="myclass">Hello<span class="test1">dfgdf</span></li>
+	</ul>
+</div>
+
+
+<style type="text/css">
+.myclass{
+   color:red;       
+}
+li.myclass{
+   background-color:black;
+}
+ul li{
+   float:left;
+}
+.test1{border: 2px solid pink;}
+</style>
+
+
+<script>
+var extractor = new CSSExtractor();
+var rules = extractor.extract('#main');
+console.log('all css affecting #main visible content is\n\n', rules.join('\n'));
+</script>
+
+</body>
+</html>
